@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.light-mode {
+  background: linear-gradient(135deg, #f3f9ff, #dbeafe);
+}
+
+.dark-mode {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #f1f5f9;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shadow-top {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#conversation {
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+.message {
+  max-width: 80%;
+  padding: 12px 18px;
+  border-radius: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease-in;
+  white-space: pre-wrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.user {
+  background: linear-gradient(135deg, #daf1ff, #cce9ff);
+  align-self: flex-end;
+}
+
+.bot {
+  background: #ffffff;
+  align-self: flex-start;
+}
+
+.dark-mode .bot {
+  background: #334155;
+}
+
+textarea.form-control {
+  resize: none;
+  border-radius: 12px;
+}
+
+.gradient-btn {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  color: white;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  font-weight: 600;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
