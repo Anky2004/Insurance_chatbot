@@ -1,0 +1,14 @@
+flask
+python-dotenv
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-together
+pinecone-client
+huggingface-hub
+transformers
+sentence-transformers
+PyPDF2
+pdfminer.six
+tiktoken
