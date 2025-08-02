@@ -1,20 +1,28 @@
 flask
 python-dotenv
 
+# LangChain core & integrations
 langchain
-langchain-core
 langchain-community
-langchain-huggingface
+langchain-core
+langchain-openai
 langchain-together
 langchain-pinecone
+langchain-huggingface
 
-pinecone-client
-
+# Embeddings & Transformers
 sentence-transformers
-huggingface-hub
+torch
 transformers
 
+# Pinecone client
+pinecone
+
+# Document parsing
 PyPDF2
+
+# Optional utilities (if you use progress bars or temp files)
+tqdm
 pdfminer.six
 
 tiktoken
